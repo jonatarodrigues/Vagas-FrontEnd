@@ -39,3 +39,17 @@ header{
     font-size: 14px;
     font-weight: bold;
 }
+
+.conteudo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px;    
+}
+
+.vagas{
+    width: 100%;
+}
+
+.filtros{
+    width: 220px;
+}
