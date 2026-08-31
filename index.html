@@ -25,19 +25,24 @@
         <button class="btn">Publicar vaga $299</button>
     </section>
 
-    <main>
-        <section>
-            <h2>Últimas Vagas</h2>
-            <span>7 vagas - Atualizado agora</span>
-
-            <div>
-                <small>Vercel</small>
+    <main class="conteudo">
+        <section class="vagas">
+            <div class="vagas__header">
+                <h2>Últimas Vagas</h2>
+                <span>7 vagas - Atualizado agora</span>
+            </div>
+            <div class="vagas__card">
                 <img src="" alt="logo">
-                <p>Full-stack Engineer</p>
-                <span>R$ 20k-30k</span>
-                <span>Remoto</span>
-                <span>4h</span>
-                <a href="">Candidatar-se</a>
+                <div><small>Vercel</small>
+                    <p>Full-stack Engineer</p>
+                    <span>R$ 20k-30k</span>
+                    <span>Remoto</span>
+                </div>
+                <div>
+                    <span>4h</span>
+                    <a href="">Candidatar-se</a>
+                </div>
+
             </div>
 
             <div>
@@ -61,11 +66,13 @@
             </div>
 
         </section>
-        <aside>
-            <h3>Filtros</h3>
-            <a href="">limpar</a>
+        <aside class="filtros">
+            <div class="filtros__header">
+                <h3>Filtros</h3>
+                <a href="">limpar</a>
+            </div>
 
-            <div>
+            <div class="filtros__itens">
                 <p>Tipo de vaga</p>
                 <label for="check_efetivo">
                     <input type="checkbox" name="check_efetivo" id="check_efetivo"> Efetivo
@@ -78,7 +85,7 @@
                 </label>
             </div>
 
-            <div>
+            <div class="filtros__itens">
                 <p>Área</p>
                 <label for="check_eng">
                     <input type="checkbox" name="check_eng" id="check_eng"> Engenharia
@@ -93,45 +100,48 @@
         </aside>
     </main>
 
-    <section>
+    <section class="hero">
         <h2>Vagas novas, toda quita-feira</h2>
         <p>Um resumo curto das melhores vagas em startups direto no seu inbox.</p>
 
-        <div>
+        <div class="cadastro">
             <form action="">
                 <input type="email" name="" id="" placeholder="seu@mail.com">
-                <button>Assinar</button>
+                <button class="btn">Assinar</button>
             </form>
         </div>
     </section>
 
-    <section>
+    <section class="depoimentos">
         <h2>Quem já usa o OpenBoard</h2>
         <p>Depoimentos de recrutadores e candidatos que ja fecharam vaga por aqui.</p>
+        
+        <div class="depoimentos__list">
+            <div>
+                <p>"Encontrei minha vaga atual scrollando num sábado. Aplicação em dois cliques."</p>
+                <img src="" alt="avatar">
+                <p>Lucas Vergara</p>
+                <span>Frontend engineer - Betha</span>
+            </div>
+            <div>
+                <p>"Encontrei minha vaga atual scrollando num sábado. Aplicação em dois cliques."</p>
+                <img src="" alt="avatar">
+                <p>Lucas Vergara</p>
+                <span>Frontend engineer - Betha</span>
+            </div>
+            <div>
+                <p>"Encontrei minha vaga atual scrollando num sábado. Aplicação em dois cliques."</p>
+                <img src="" alt="avatar">
+                <p>Lucas Vergara</p>
+                <span>Frontend engineer - Betha</span>
+            </div>
+        </div>
 
-        <div>
-            <p>"Encontrei minha vaga atual scrollando num sábado. Aplicação em dois cliques."</p>
-            <img src="" alt="avatar">
-            <p>Lucas Vergara</p>
-            <span>Frontend engineer - Betha</span>
-        </div>
-        <div>
-            <p>"Encontrei minha vaga atual scrollando num sábado. Aplicação em dois cliques."</p>
-            <img src="" alt="avatar">
-            <p>Lucas Vergara</p>
-            <span>Frontend engineer - Betha</span>
-        </div>
-        <div>
-            <p>"Encontrei minha vaga atual scrollando num sábado. Aplicação em dois cliques."</p>
-            <img src="" alt="avatar">
-            <p>Lucas Vergara</p>
-            <span>Frontend engineer - Betha</span>
-        </div>
+
     </section>
 
     <footer>
-        OpenBoard
-        2026 - Todos os direitos reservados
+        OpenBoard <strong>2026 - Todos os direitos reservados</strong>
 
         <nav>
             <a href="">Entrar</a>
