@@ -1,15 +1,20 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: #fafaf9;
     color: #111111;
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,20 +22,20 @@ header {
     border-bottom: 1px solid #e5e5e3;
 }
 
-.hero {
+.hero{
     padding: 100px 40px;
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 48px;
+.hero h2{
+   font-size: 48px; 
 }
 
-.hero p {
-    margin-bottom: 32px;
+.hero p{
+    margin-bottom: 32px
 }
 
-.btn {
+.btn{
     color: #ffffff;
     background-color: #111111;
     border: none;
@@ -40,58 +45,106 @@ header {
     font-weight: bold;
 }
 
-.conteudo {
+.conteudo{
     display: flex;
     flex-direction: row-reverse;
     padding: 40px;
 }
 
-.vagas {
+.vagas{
     width: 100%;
+    padding-left: 40px;
 }
 
-.filtros {
-    width: 220px;
-}
-
-.filtros__header {
+.vagas__header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-.filtros__itens {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    padding-bottom: 20px;
-}
-
-.filtros__itens p {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 8px 0px;
-}
-
-.vagas__header {
+.vagas__card{
     display: flex;
     justify-content: space-between;
-}
-
-.vagas__card {
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
     width: 100%;
-}
-
-.cadastro input {
-    width: 300px;
-    padding: 12px 20px;
-    border: 1px solid #eddd;
+    padding: 16px;
+    margin: 8px 0;
+    color: #999999;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
     border-radius: 8px;
 }
 
-.depoimentos {
+.vagas__avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.vagas__body{
+    width: 100%;
+    padding-left: 40px;
+}
+
+.vagas__title{
+    padding-bottom: 16px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+}
+
+.vagas__badge{
+    padding: 4px 8px;
+    background-color: #e5e5e3;
+    border-radius: 4px;
+}
+
+.vagas__badge--highlight{
+    border: 1px solid #999999;
+}
+
+.vagas__actions{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.filtros{
+    width: 220px;
+}
+
+.filtros__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtros__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.filtros__itens p{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.cadastro input{
+    padding: 12px 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.depoimentos{
     display: flex;
     padding: 100px 40px;
     flex-direction: column;
@@ -99,13 +152,13 @@ header {
     gap: 12px;
 }
 
-.depoimentos__list {
+.depoimentos__list{
     display: flex;
     padding-top: 40px;
     gap: 32px;
 }
 
-footer {
+footer{
     display: flex;
     justify-content: space-between;
     padding: 16px 40px;
