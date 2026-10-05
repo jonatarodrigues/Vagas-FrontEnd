@@ -164,33 +164,31 @@ footer{
     padding: 16px 40px;
 }
 
+
 @media (max-width: 768px){
- .filtros{
-    display: none;
- }
+    .filtros{
+        display: none;
+    }
 
- .vagas__card{
-    flex-direction: column;
-    align-items: start;    
- }
+    .vagas__header{
+        flex-direction: column;
+    }
 
- .vagas__body{
-   padding-left: 10px;
-   padding-bottom: 40px;
- }
+    .vagas__card{
+        flex-direction: column;
+        align-items: start;
+    }
 
- .vagas__actions{
-    width: 100%;
-    padding: 10px;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid #e5e5e3;
- }
+    .vagas__body{
+        padding-left: 10px;
+        padding-bottom: 40px;
+    }
 
- .vagas__header{
-    flex-direction: column;
-    align-items: start;
-    gap: 12px;
- }
-
+    .vagas__actions{
+        width: 100%;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 1px solid #e5e5e3;
+    }
 }
