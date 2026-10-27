@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import Depoimentos from './components/Depoimentos'
 import News from './components/News'
 import Vagas from './components/Vagas'
+import vagas from './data/vagas'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,11 +17,17 @@ function App() {
     <>
 
       <Header></Header>
-      
-      <Hero></Hero>
+
+
+      <Hero
+        titulo="As melhores vagas em startups de tecnologia"
+        subtitulo="Encontre oportunidades reais em..."
+      >
+        <button className="btn">Publicar vaga $299</button>
+      </Hero>
 
       <main className="conteudo">
-        <Vagas></Vagas>
+        <Vagas vagas={vagas}></Vagas>
       </main>
 
       <News></News>
@@ -28,7 +35,6 @@ function App() {
       <Depoimentos></Depoimentos>
 
       <Footer></Footer>
-
 
     </>
   )

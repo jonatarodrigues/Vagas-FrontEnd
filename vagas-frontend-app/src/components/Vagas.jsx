@@ -1,57 +1,37 @@
-function Vagas() {
+import VagaCard from "./VagaCard";
+import { useEffect } from 'react';
+
+function Vagas({ vagas }) {
+    useEffect(() => {
+        document.title = `${vagas.length} vagas | OpenBoard`;
+    }, [vagas.length]);
+
+
     return (
         <>
             <section className="vagas">
 
                 <div className="vagas__header">
                     <h2>Últimas Vagas</h2>
-                    <span>7 vagas - Atualizado agora</span>
+                    <span>{vagas.length} vagas - Atualizado agora</span>
                 </div>
 
-                <div className="vagas__card">
-                    <div className="vagas__avatar">V</div>
-                    <div className="vagas__body">
-                        <small>Vercel</small>
-                        <p className="vagas__title">Full-stack Engineer</p>
-                        <span className="vagas__badge">R$ 20k-30k</span>
-                        <span className="vagas__badge vagas__badge--highlight">Remoto</span>
-                    </div>
-                    <div className="vagas__actions">
-                        <span>4h</span>
-                        <a href="">Candidatar-se</a>
-                    </div>
-                </div>
+                {vagas.map((vagas) => (
+                    <VagaCard
+                        key={vagas.id}
+                        empresa={vagas.empresa}
+                        cargo={vagas.cargo}
+                        salario={vagas.salario}
+                        modelo={vagas.modelo}
+                        publicada={vagas.publicada}>
 
-                <div className="vagas__card">
-                    <div className="vagas__avatar">V</div>
-                    <div className="vagas__body">
-                        <small>Vercel</small>
-                        <p className="vagas__title">Full-stack Engineer</p>
-                        <span className="vagas__badge">R$ 20k-30k</span>
-                        <span className="vagas__badge vagas__badge--highlight">Remoto</span>
-                    </div>
-                    <div className="vagas__actions">
-                        <span>4h</span>
-                        <a href="">Candidatar-se</a>
-                    </div>
-                </div>
+                    </VagaCard>
+                ))}
 
-                <div className="vagas__card">
-                    <div className="vagas__avatar">V</div>
-                    <div className="vagas__body">
-                        <small>Vercel</small>
-                        <p className="vagas__title">Full-stack Engineer</p>
-                        <span className="vagas__badge">R$ 20k-30k</span>
-                        <span className="vagas__badge vagas__badge--highlight">Remoto</span>
-                    </div>
-                    <div className="vagas__actions">
-                        <span>4h</span>
-                        <a href="">Candidatar-se</a>
-                    </div>
-                </div>
 
 
             </section>
+
             <aside className="filtros">
                 <div className="filtros__header">
                     <h3>Filtros</h3>
